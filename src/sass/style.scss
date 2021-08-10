@@ -1,3 +1,7 @@
-main {
-  background-color: rebeccapurple;
-}
+@import './variables';
+@import './container';
+@import './global';
+@import './components/header';
+@import './components/search-form';
+@import './components/promo';
+@import './components/offer';

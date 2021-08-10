@@ -12,19 +12,22 @@
 <body>
 <header class="header">
   <div class="header__wrapper container">
-    <div class="header__logo">
+    <a class="header__item header__logo" href="index.html">
       <img src="img/shop-logo.png" alt="Логотип" class="header__logo">
+    </a>
+    <div class="header__item header__search search-form">
+      <img src="img/icon-search.svg" alt="Найти" class="search-form__icon">
+      <input type="text" class="search-form__input">
     </div>
-    <input class="header__search" />
-    <div class="header__menu">
+    <a class="header__item  header__menu">
       <img src="img/icon-menu.svg" alt="Открыть меню">
-    </div>
-    <div class="header__account">
+    </a>
+    <a class="header__item  header__account">
       <img src="img/icon-account.svg" alt="Открыть профиль">
-    </div>
-    <div class="header__trash">
+    </a>
+    <a class="header__item header__trash">
       <img src="img/icon-trash.svg" alt="Открыть корзину">
-    </div>
+    </a>
   </div>
 </header>
 <section class="promo">
@@ -38,32 +41,32 @@
 </section>
 <section class="offer">
   <div class="offer__wrapper container">
-    <ul class="offer__list">
-      <li class="offer__item">
-        <p class="offer__name">
-          30% OFF
-          <span>FOR WOMEN</span>
-        </p>
-      </li>
-      <li class="offer__item">
-        <p class="offer__name">
-          HOT DEAL
-          <span>FOR MEN</span>
-        </p>
-      </li>
-      <li class="offer__item">
-        <p class="offer__name">
-          NEW ARRIVALS
-          <span>FOR KIDS</span>
-        </p>
-      </li>
-      <li class="offer__item">
-        <p class="offer__name">
-          LUXIROUS & TRENDY
-          <span>ACCESORIES</span>
-        </p>
-      </li>
-    </ul>
+    <div class="offer__list">
+        <a href="" class="offer__link">
+          <p class="offer__name">
+            30% OFF
+          </p>
+          <p class="offer__type">FOR WOMEN</p>
+        </a>
+        <a href="#" class="offer__link">
+          <p class="offer__name">
+            HOT DEAL
+          </p>
+          <p class="offer__type">FOR MEN</p>
+        </a>
+        <a href="#" class="offer__link">
+          <p class="offer__name">
+            NEW ARRIVALS
+          </p>
+          <p class="offer__type">FOR KIDS</p>
+        </a>
+        <a href="#" class="offer__link">
+          <p class="offer__name">
+            LUXIROUS & TRENDY
+          </p>
+          <p class="offer__type">ACCESORIES</p>
+        </a>
+    </div>
   </div>
 </section>
 </body>

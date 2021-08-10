@@ -1,0 +1,29 @@
+.header {
+  background-color: $header-bg;
+}
+
+.header__wrapper {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__item:not(:nth-of-type(1)){
+  margin-left: 25px;
+}
+
+.header__item {
+  cursor: pointer;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__search {
+  flex-basis: 70%;
+  margin-left: 16px;
+}
