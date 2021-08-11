@@ -167,9 +167,6 @@ a:focus {
   flex-direction: row;
   align-items: center; }
 
-.products__card {
-  width: 31%; }
-
 .products__link {
   margin-top: 63px;
   border: 1px solid #F26376;
@@ -183,7 +180,8 @@ a:focus {
   color: #F26376; }
 
 .card {
-  cursor: pointer; }
+  cursor: pointer;
+  width: 360px; }
 
 .card__text {
   padding: 20px 18px; }
