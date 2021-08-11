@@ -1,0 +1,19 @@
+.social {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social__item {
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social__item:not(:nth-of-type(1)) {
+  margin-left: 8px;
+}

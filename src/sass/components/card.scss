@@ -1,0 +1,34 @@
+.card {
+  cursor: pointer;
+}
+
+.card__text {
+  padding: 20px 18px;
+}
+
+.card__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.card__description {
+  margin-top: 18px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+.card__price {
+  margin-top: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
