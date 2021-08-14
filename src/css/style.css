@@ -11,6 +11,9 @@ a:hover,
 a:focus {
   text-decoration: none; }
 
+ul {
+  list-style-type: none; }
+
 .header {
   background-color: #222222; }
 
@@ -372,5 +375,193 @@ a:focus {
 
 .social__item:not(:nth-of-type(1)) {
   margin-left: 8px; }
+
+.breadcrumb {
+  background-color: #f8f3f4; }
+
+.breadcrumb__wrapper {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  display: flex;
+  justify-content: space-between; }
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+.breadcrumb__section {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #636363; }
+  .breadcrumb__section--active {
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #f16d7f; }
+
+.breadcrumb__divider {
+  margin: 0 6px 0 3px; }
+
+.product__wrapper {
+  padding-top: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.product__carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.product__button {
+  padding: 17px 20px;
+  background-color: #d8d8d8;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.product__description {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1141px; }
+
+.product__divider {
+  margin-top: 14px;
+  width: 150px;
+  height: 1px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .product__divider:after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: #ef5b70; }
+
+.product__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F; }
+
+.product__subtitle {
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D; }
+
+.product__text {
+  margin-top: 67px;
+  width: 618px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E; }
+
+.product__descr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 50%;
+  margin-top: 28px; }
+
+.product__descr-item {
+  color: #b9b9b9;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.product__descr-span {
+  color: #2f2f2f;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal; }
+
+.product__price {
+  margin-top: 37px;
+  color: #ef5b70;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center; }
+
+.product__choose {
+  width: 65%;
+  padding: 63px 53px;
+  margin-top: 43px;
+  border-top: 1px solid #eaeaea; }
+
+.form-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.form-add__label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .form-add__label select {
+    margin-left: 10px; }
+
+.form-add__wrap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.form-add__label {
+  width: 33%; }
+  .form-add__label input {
+    width: 30px;
+    margin-left: 10px; }
+
+.form-add__button {
+  margin-top: 63px;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #F26376;
+  background-color: white;
+  cursor: pointer; }
+  .form-add__button p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    margin-left: 22px; }
 
 /*# sourceMappingURL=style.css.map */

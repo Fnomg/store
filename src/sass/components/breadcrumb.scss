@@ -1,0 +1,40 @@
+.breadcrumb {
+  background-color: #f8f3f4;
+}
+
+.breadcrumb__wrapper {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.breadcrumb__section {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #636363;
+
+  &--active {
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #f16d7f;
+  }
+}
+
+.breadcrumb__divider {
+  margin: 0 6px 0 3px;
+}
