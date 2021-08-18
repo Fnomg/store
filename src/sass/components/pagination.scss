@@ -1,0 +1,26 @@
+.pagination {
+  margin-top: 60px;
+  display: flex;
+  padding: 0;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+}
+
+.pagination__item {
+  display: flex;
+}
+
+.pagination__link {
+  color: #C4C4C4;
+  padding: 8px 16px;
+  text-decoration: none;
+
+  &--active {
+    color: #F26376;
+  }
+}
+
+.pagination__item:nth-of-type(1) .pagination__link,
+.pagination__item:last-of-type .pagination__link {
+  color: black;
+}
