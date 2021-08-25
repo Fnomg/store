@@ -1,0 +1,26 @@
+.info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.info__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.info__input {
+  margin-top: 20px;
+  width: 360px;
+  padding: 14px 17px;
+  border: 1px solid #A4A4A4;
+  outline: none;
+  resize: none;
+}
+
+.info__input {
+  margin-top: 23px;
+}

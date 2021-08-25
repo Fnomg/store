@@ -1,0 +1,43 @@
+.checkout {
+  background-color: #F5F3F3;
+  padding: 39px 34px;
+  width: 100%;
+  margin-top: 57px;
+}
+
+.checkout__texts {
+  display: block;
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 21px;
+  text-align: right;
+}
+
+.checkout__button {
+  margin-top: 17px;
+  width: 100%;
+}
+
+.checkout__subtitle{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+
+.checkout__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 12px;
+
+  span {
+    color: #f16d7f;
+  }
+}
+
+.checkout__price {
+  margin-left: 30px;
+}
