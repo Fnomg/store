@@ -10,6 +10,7 @@
 </head>
 <script src="./js/script.js" defer></script>
 <body>
+
 <header class="header">
   <div class="header__wrapper container">
     <a class="header__item header__logo" href="index.html">
@@ -30,56 +31,94 @@
     </a>
   </div>
 </header>
-<section class="promo">
-  <div class="promo__wrapper container">
-    <div class="promo__pictures"></div>
-    <div class="promo__content">
-      <h1 class="promo__title">THE BRAND</h1>
-      <p class="promo__text">OF LUXERIOUS <span>FASHION</span></p>
+<section class="breadcrumb">
+  <div class="breadcrumb__wrapper container">
+    <h2 class="breadcrumb__page__title">New Arrivals</h2>
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a href="/" class="breadcrumb__link">
+          <span class="breadcrumb__section">Home</span>
+          <span class="breadcrumb__divider">/</span>
+        </a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">
+          <span class="breadcrumb__section">Men</span>
+          <span class="breadcrumb__divider">/</span>
+        </a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">
+          <span class="breadcrumb__section breadcrumb__section--active">New Arrivals</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="product">
+  <div class="product__wrapper">
+    <div class="product__carousel">
+      <button class="product__button product__button-prev" type="button">
+        <img src="img/left-arrow.svg" alt="">
+      </button>
+      <ul class="product__list">
+        <li class="product__item">
+          <img class="product__img" src="img/products/product-big.png" alt="#">
+        </li>
+      </ul>
+      <button class="product__button product__button--next" type="button">
+        <img src="img/right-arrow.svg" alt="">
+      </button>
+    </div>
+    <div class="product__description">
+      <h3 class="product__title">WOMEN COLLECTION</h3>
+      <h4 class="product__subtitle">Moschino Cheap And Chic</h4>
+      <p class="product__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+      <div class="product__descr">
+        <p class="product__descr-item">MATERIAL: <span class="product__descr-span">COTTON</span></p>
+        <p class="product__descr-item">DESIGNER: <span class="product__descr-span">BINBURHAN</span></p>
+      </div>
+      <div class="product__price">$561</div>
+      <form class="product__choose form-add">
+        <div class="form-add__wrap">
+          <label class="form-add__label" for="color">CHOOSE COLOR
+            <select name="color" id="color">
+              <option value="red">red</option>
+              <option value="green">green</option>
+            </select>
+          </label>
+          <label class="form-add__label" for="size">CHOOSE SIZE
+            <select name="size" id="size">
+              <option value="red">S</option>
+              <option value="green">M</option>
+              <option value="green">L</option>
+            </select>
+          </label>
+          <label class="form-add__label" for="color">QUANTITY
+            <input type="number" placeholder="1">
+          </label>
+        </div>
+        <button class="form-add__button" type="button">
+          <img src="img/trash-pink.svg" alt="" width="26">
+          <p>Add to Cart</p>
+        </button>
+      </form>
     </div>
   </div>
 </section>
-<section class="offer">
-  <div class="offer__wrapper container">
-    <div class="offer__list">
-      <a href="" class="offer__link">
-        <p class="offer__name">
-          30% OFF
-        </p>
-        <p class="offer__type">FOR WOMEN</p>
-      </a>
-      <a href="#" class="offer__link">
-        <p class="offer__name">
-          HOT DEAL
-        </p>
-        <p class="offer__type">FOR MEN</p>
-      </a>
-      <a href="#" class="offer__link">
-        <p class="offer__name">
-          NEW ARRIVALS
-        </p>
-        <p class="offer__type">FOR KIDS</p>
-      </a>
-      <a href="#" class="offer__link">
-        <p class="offer__name">
-          LUXIROUS & TRENDY
-        </p>
-        <p class="offer__type">ACCESORIES</p>
-      </a>
-    </div>
-  </div>
-</section>
+
+
 <section class="products">
   <div class="products__wrapper container">
-    <h2 class="products__title">Fetured Items</h2>
-    <p class="products__subtitle">Shop for items based on what we featured in this week</p>
-    <div class="products__list">
+   <div class="products__list">
       <a href="product.html" class="products__card card">
         <img src="img/products/product-1.jpg" alt="Синяя куртка" class="card__img">
         <div class="card__text">
           <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
           <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-          Kym Ellery teams up with Moda Operandi.</p>
+            Kym Ellery teams up with Moda Operandi.</p>
           <p class="card__price">$52.00</p>
         </div>
       </a>
@@ -101,55 +140,7 @@
           <p class="card__price">$52.00</p>
         </div>
       </a>
-      <a href="product.html" class="products__card card">
-        <img src="img/products/product-4.jpg" alt="Синяя куртка" class="card__img">
-        <div class="card__text">
-          <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-            Kym Ellery teams up with Moda Operandi.</p>
-          <p class="card__price">$52.00</p>
-        </div>
-      </a>
-      <a href="product.html" class="products__card card">
-        <img src="img/products/product-5.jpg" alt="Синяя куртка" class="card__img">
-        <div class="card__text">
-          <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-            Kym Ellery teams up with Moda Operandi.</p>
-          <p class="card__price">$52.00</p>
-        </div>
-      </a>
-      <a href="product.html" class="products__card card">
-        <img src="img/products/product-6.jpg" alt="Синяя куртка" class="card__img">
-        <div class="card__text">
-          <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-            Kym Ellery teams up with Moda Operandi.</p>
-          <p class="card__price">$52.00</p>
-        </div>
-      </a>
     </div>
-    <a href="" class="products__link">
-      <p class="products__link-text">Browse All Product</p>
-    </a>
-  </div>
-</section>
-<section class="advantages">
-  <div class="advantages__wrapper container">
-    <ul class="advantages__list">
-      <li class="advantages__item"><img src="img/advantages-icon-1.svg" alt="Бесплатная доставка" class="advantages__icon">
-        <h4 class="advantages__title">Free Delivery</h4>
-        <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-      </li>
-      <li class="advantages__item"><img src="img/advantages-icon-2.svg" alt="Распродажи и скидки" class="advantages__icon">
-        <h4 class="advantages__title">Sales & discounts</h4>
-        <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-      </li>
-      <li class="advantages__item"><img src="img/advantages-icon-3.svg" alt="Высокая мода" class="advantages__icon">
-        <h4 class="advantages__title">Quality assurance</h4>
-        <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-      </li>
-    </ul>
   </div>
 </section>
 <section class="review">
@@ -187,5 +178,6 @@
     </div>
   </div>
 </footer>
+
 </body>
 </html>
