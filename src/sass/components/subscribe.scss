@@ -47,22 +47,9 @@
   border: none;
   outline: none;
   background-color: #E1E1E1;
-}
+  transition: .3s;
 
-.subscribe__button {
-  background: #F16D7F;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  &:hover {
+    background-color: #cacaca;
+  }
 }

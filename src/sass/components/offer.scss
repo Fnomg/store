@@ -35,6 +35,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 }
 
 .offer__link:last-of-type {

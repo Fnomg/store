@@ -1,10 +1,9 @@
 .header {
   background-color: $header-bg;
+  position: relative;
 }
 
 .header__wrapper {
-  padding-top: 18px;
-  padding-bottom: 18px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,9 +20,24 @@
 
 .header__menu {
   margin-left: auto;
+  position: relative;
+  padding: 20px;
+
+  &:hover{
+    .header__nav {
+      display: block;
+    }
+  }
 }
 
 .header__search {
   flex-basis: 70%;
   margin-left: 16px;
+}
+
+.header__nav{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 67px;
 }

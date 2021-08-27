@@ -2,6 +2,12 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  &:hover {
+    .search-form__input {
+      background-color: #29292a
+    }
+  }
 }
 
 .search-form__input {
@@ -12,7 +18,6 @@
   outline: none;
   color: white;
   padding-left: 40px;
-
 }
 
 .search-form__icon {
