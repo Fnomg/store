@@ -221,6 +221,9 @@ ul {
     background-color: #F16D7F;
     border: 1px solid #fff; }
 
+.card__btn-text {
+  margin-left: 10px; }
+
 .card__text {
   padding: 20px 18px; }
 
@@ -599,6 +602,9 @@ input::-webkit-inner-spin-button {
 .form-add__icon {
   margin-right: 10px; }
 
+.form-reg__btn-icon {
+  margin-left: 10px; }
+
 .pagination {
   margin-top: 60px;
   display: flex;
@@ -745,7 +751,7 @@ input {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 40px;
   color: #000000; }
 
 .form-reg__item {
@@ -912,7 +918,6 @@ input {
   line-height: 17px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: row; }
   .button:hover {
     border: 1px solid #F26376;
