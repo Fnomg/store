@@ -45,8 +45,9 @@ ul {
 .header__nav {
   display: none;
   position: absolute;
+  border-top: 5px solid black;
   left: 0;
-  top: 67px; }
+  top: 61px; }
 
 .search-form {
   display: flex;
