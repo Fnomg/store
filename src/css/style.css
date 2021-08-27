@@ -3,7 +3,6 @@
   margin: 0 auto; }
 
 * {
-  padding: 0;
   margin: 0; }
 
 a,
@@ -648,6 +647,94 @@ ul {
   line-height: 17px;
   color: #6F6E6E;
   padding: 6px;
+  cursor: pointer; }
+
+input {
+  box-sizing: border-box; }
+
+.form-reg {
+  width: 360px; }
+
+.registration__wrapper {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.registration__descr {
+  margin-left: 128px;
+  max-width: 652px; }
+
+.registration__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000; }
+
+.registration__subtitle {
+  margin-top: 22px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000; }
+
+.registration__list {
+  margin-top: 22px;
+  list-style-type: "V   "; }
+
+.registration__item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000; }
+
+.form-reg__item {
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0; }
+  .form-reg__item--horizontal {
+    flex-direction: row; }
+
+.form-reg__item:not(:nth-of-type(1)) {
+  margin-top: 31px; }
+
+.form-reg__text-help {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1; }
+
+.input-box {
+  margin-top: 20px;
+  width: 100%;
+  padding: 13px 17px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1; }
+
+.input-radio {
+  margin-right: 10px; }
+
+.label-radio {
+  margin-right: 20px; }
+
+.form-reg__button {
+  margin-top: 40px;
+  padding: 16px 29px;
+  background-color: #f16d7f;
+  border: none;
+  outline: none;
+  color: white;
   cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>The Brand</title>
+</head>
+<script src="./js/script.js" defer></script>
+<body>
+
+
+<header class="header">
+  <div class="header__wrapper container">
+    <a class="header__item header__logo" href="index.html">
+      <img src="img/shop-logo.png" alt="Логотип" class="header__logo">
+    </a>
+    <div class="header__item header__search search-form">
+      <img src="img/icon-search.svg" alt="Найти" class="search-form__icon">
+      <input type="text" class="search-form__input">
+    </div>
+    <a class="header__item  header__menu">
+      <img src="img/icon-menu.svg" alt="Открыть меню">
+    </a>
+    <a href="registration.html" class="header__item  header__account">
+      <img src="img/icon-account.svg" alt="Открыть профиль">
+    </a>
+    <a class="header__item header__trash">
+      <img src="img/icon-trash.svg" alt="Открыть корзину">
+    </a>
+  </div>
+</header>
+<section class="breadcrumb">
+  <div class="breadcrumb__wrapper container">
+    <h2 class="breadcrumb__page__title">REGISTRATION</h2>
+  </div>
+</section>
+
+
+<div class="registration">
+  <div class="registration__wrapper container">
+    <form class="registration__form form-reg">
+      <fieldset class="form-reg__item">
+        <legend>Your Name</legend>
+        <input class="input-box" type="text" placeholder="First Name" id="f_name" name="f_name">
+        <input class="input-box" type="text" placeholder="Last Name" id="l_name" name="l_name">
+      </fieldset>
+      <fieldset class="form-reg__item form-reg__item--horizontal">
+        <label class="label-radio">
+          <input class="input-radio" type="radio" id="male" name="gender">
+          Male
+        </label>
+        <label class="label-radio">
+          <input class="input-radio" type="radio" id="female" name="gender">
+          Female
+        </label>
+      </fieldset>
+      <fieldset class="form-reg__item">
+        <legend>Login details</legend>
+        <input class="input-box" type="email" placeholder="Email">
+        <input class="input-box" type="password" placeholder="Password">
+      </fieldset>
+      <p class="form-reg__text-help">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+      <button class="form-reg__button" type="submit">JOIN NOW</button>
+    </form>
+    <div class="registration__descr">
+      <h2 class="registration__title">LOYALTY HAS ITS PERKS</h2>
+      <p class="registration__subtitle">Get in on the loyalty program where you can earn points and unlock serious
+        perks. Starting with these as soon as you join:</p>
+      <ul class="registration__list">
+        <li class="registration__item">15% off welcome offer</li>
+        <li class="registration__item">Free shipping, returns and exchanges on all orders</li>
+        <li class="registration__item">$10 off a purchase on your birthday</li>
+        <li class="registration__item">Early access to products</li>
+        <li class="registration__item">Exclusive offers & rewards</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="review">
+  <div class="review__wrapper container">
+    <div class="review__content">
+      <img src="img/review-icon-1.jpg" alt="Счастливый покупатель" class="review__icon">
+      <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+        condimentum</i>“</p>
+    </div>
+    <div class="review__subscribe subscribe">
+      <h4 class="subscribe__title">SUBSCRIBE</h4>
+      <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
+      <form action="#" class="subscribe__form">
+        <input type="email" placeholder="Enter Your Email" class="subscribe__input">
+        <button type="submit" class="subscribe__button">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__wrapper container">
+    <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+    <div class="footer__social social">
+      <a class="social__item">
+        <img src="img/fb-icon.svg" alt="Facebook">
+      </a>
+      <a class="social__item">
+        <img src="img/pinterest-icon.svg" alt="Pinterest">
+      </a>
+      <a class="social__item">
+        <img src="img/instagramm-icon.svg" alt="Instagram">
+      </a>
+      <a class="social__item">
+        <img src="img/twit-icon.svg" alt="Twitter">
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
