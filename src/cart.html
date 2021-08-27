@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>The Brand</title>
+</head>
+<script src="./js/script.js" defer></script>
+<body>
+
+<header class="header">
+  <div class="header__wrapper container">
+    <a class="header__item header__logo" href="index.html">
+      <img src="img/shop-logo.png" alt="Логотип" class="header__logo">
+    </a>
+    <div class="header__item header__search search-form">
+      <img src="img/icon-search.svg" alt="Найти" class="search-form__icon">
+      <input type="text" class="search-form__input">
+    </div>
+    <a class="header__item  header__menu">
+      <img src="img/icon-menu.svg" alt="Открыть меню">
+    </a>
+    <a href="registration.html" class="header__item  header__account">
+      <img src="img/icon-account.svg" alt="Открыть профиль">
+    </a>
+    <a class="header__item header__trash">
+      <img src="img/icon-trash.svg" alt="Открыть корзину">
+    </a>
+  </div>
+</header>
+<section class="breadcrumb">
+  <div class="breadcrumb__wrapper container">
+    <h2 class="breadcrumb__page__title">SHOPPING CART</h2>
+  </div>
+</section>
+
+
+<section class="output">
+  <div class="output__wrapper container">
+    <div class="goods">
+      <div class="goods__list">
+        <a href="product.html" class="goods__card good">
+          <img src="img/products/product-1.jpg" alt="Синяя куртка" class="good__img">
+          <div class="good__text">
+            <h3 class="good__title">ELLERY X M'O CAPSULE</h3>
+            <div class="good__text-wrap">
+              <p class="good__text-item">Price: <span class="good__text-item good__text-item--pink">$52.00</span></p>
+              <p class="good__text-item">Color: <span>red</span></p>
+              <p class="good__text-item">Size: <span>XL</span></p>
+              <label class="good__text-item">Quantity: <input class="good__text-item good__text-input" type="text" placeholder="2"></label>
+            </div>
+          </div>
+        </a>
+        <a href="product.html" class="goods__card good">
+          <img src="img/products/product-1.jpg" alt="Синяя куртка" class="good__img">
+          <div class="good__text">
+            <h3 class="good__title">ELLERY X M'O CAPSULE</h3>
+            <div class="good__text-wrap">
+              <p class="good__text-item">Price: <span class="good__text-item good__text-item--pink">$52.00</span></p>
+              <p class="good__text-item">Color: <span>red</span></p>
+              <p class="good__text-item">Size: <span>XL</span></p>
+              <label class="good__text-item">Quantity: <input class="good__text-item good__text-input" type="text" placeholder="2"></label>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="goods__change">
+        <button class="goods__btn button" type="reset">CLEAR SHOPPING CART</button>
+        <a class="goods__btn button" href="index.html">CONTINUE SHOPPING</a>
+      </div>
+    </div>
+    <form class="info" action="#">
+      <h3 class="info__title">SHIPPING ADRESS</h3>
+      <input class="info__input" type="text" placeholder="Bangladesh">
+      <input class="info__input" type="text" placeholder="State">
+      <input class="info__input" type="text" placeholder="Postcode / Zip">
+      <textarea class="info__input" placeholder="GET A QUOTE"></textarea>
+      <div class="info__checkout checkout">
+        <div class="checkout__texts">
+          <p class="checkout__subtitle">SUB TOTAL<span class="checkout__price">$900</span></p>
+          <p class="checkout__title">GRAND TOTAL<span class="checkout__price">$900</span></p>
+        </div>
+        <button type="submit" class="checkout__button button">PROCEED TO CHECKOUT</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<section class="review">
+  <div class="review__wrapper container">
+    <div class="review__content">
+      <img src="img/review-icon-1.jpg" alt="Счастливый покупатель" class="review__icon">
+      <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+        condimentum</i>“</p>
+    </div>
+    <div class="review__subscribe subscribe">
+      <h4 class="subscribe__title">SUBSCRIBE</h4>
+      <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
+      <form action="#" class="subscribe__form">
+        <input type="email" placeholder="Enter Your Email" class="subscribe__input">
+        <button type="submit" class="subscribe__button">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__wrapper container">
+    <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+    <div class="footer__social social">
+      <a class="social__item">
+        <img src="img/fb-icon.svg" alt="Facebook">
+      </a>
+      <a class="social__item">
+        <img src="img/pinterest-icon.svg" alt="Pinterest">
+      </a>
+      <a class="social__item">
+        <img src="img/instagramm-icon.svg" alt="Instagram">
+      </a>
+      <a class="social__item">
+        <img src="img/twit-icon.svg" alt="Twitter">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
