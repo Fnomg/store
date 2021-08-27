@@ -1,6 +1,6 @@
 .button {
   padding: 17px 40px;
-  background-color: #FFFFFF;
+  background-color: $btn-bg;
   border: 1px solid #A4A4A4;
   outline: none;
   cursor: pointer;
@@ -12,9 +12,9 @@
   line-height: 17px;
 
   &:hover {
-    border: 1px solid #F26376;
-    background-color: #F26376;
-    color: white;
+    border: 1px solid $btn-bg-bright;
+    background-color: $btn-bg-bright;
+    color: $btn-text-bright;
   }
 
   &--small {
@@ -23,12 +23,12 @@
 
   &--pink {
     border: 1px solid transparent;
-    background-color: #F26376;
-    color: white;
+    background-color: $btn-bg-bright;
+    color: $btn-text-bright;
 
     &:hover {
-      background-color: white;
-      color: #2f2f2f;
+      background-color: $btn-text-bright;
+      color: $btn-text-bright-less;
     }
   }
 

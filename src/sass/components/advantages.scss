@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #222224;
+  background-color: $accent-bg;
 }
 
 .advantages__wrapper {
@@ -30,7 +30,7 @@
   font-weight: normal;
   font-size: 19.96px;
   line-height: 24px;
-  color: #FBFBFB;
+  color: $advantages-text;
 }
 
 .advantages__text {
@@ -40,5 +40,5 @@
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
-  color: #FBFBFB;
+  color: $advantages-text;
 }
