@@ -89,6 +89,7 @@
   color: #6F6E6E;
   padding: 6px;
   cursor: pointer;
+  transition: .3s;
 
   &:hover {
     color: $accent-details;

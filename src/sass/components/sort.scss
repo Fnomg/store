@@ -1,5 +1,6 @@
 .sort {
   position: relative;
+  transition: .3s;
   &:hover {
     .sort__title,
     .sort__icon {

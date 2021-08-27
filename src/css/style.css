@@ -441,7 +441,11 @@ ul {
   background-color: #d8d8d8;
   border: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .3s; }
+  .product__button:hover {
+    color: #ef5b70;
+    background-color: #e3e3e3; }
 
 .product__description {
   background-color: white;
@@ -528,7 +532,7 @@ ul {
   text-align: center; }
 
 .product__choose {
-  width: 65%;
+  width: 55%;
   padding: 63px 53px;
   margin-top: 43px;
   border-top: 1px solid #eaeaea; }
@@ -548,7 +552,7 @@ ul {
     margin-left: 10px; }
 
 .form-add__wrap {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -561,21 +565,39 @@ ul {
     margin-left: 10px; }
 
 .form-add__button {
-  margin-top: 63px;
-  padding: 10px 24px;
+  margin-top: 63px; }
+
+.form-add__item {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #F26376;
-  background-color: white;
-  cursor: pointer; }
-  .form-add__button p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E; }
+  .form-add__item select {
+    border: none;
+    outline: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    margin-left: 22px; }
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E; }
+
+.form-add__select {
+  position: absolute; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0; }
+
+.form-add__input {
+  text-align: center; }
+
+.form-add__icon {
+  margin-right: 10px; }
 
 .pagination {
   margin-top: 60px;
@@ -672,7 +694,8 @@ ul {
   line-height: 17px;
   color: #6F6E6E;
   padding: 6px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .3s; }
   .filter__subtitle:hover {
     color: #F16D7F; }
 
@@ -886,7 +909,11 @@ input {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 17px; }
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; }
   .button:hover {
     border: 1px solid #F26376;
     background-color: #F26376;
@@ -1009,7 +1036,8 @@ input {
   text-transform: uppercase; }
 
 .sort {
-  position: relative; }
+  position: relative;
+  transition: .3s; }
   .sort:hover .sort__title,
   .sort:hover .sort__icon {
     color: #F16D7F; }
