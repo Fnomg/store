@@ -1,10 +1,14 @@
 .filters {
   display: flex;
   align-items: center;
-  width: 65%;
+  width: 100%;
   justify-content: space-between;
   margin-left: 0;
   margin-right: auto;
+
+  @media (min-width: 1264px) {
+    width: 65%;
+  }
 }
 
 .filters__item {
@@ -38,7 +42,12 @@
 }
 
 .filter__big-title {
+  display: none;
   z-index: 6;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 .filter__icon {
@@ -50,10 +59,10 @@
   display: none;
   flex-direction: column;
   position: absolute;
-  left: -20px;
+  left: -10px;
   top: -30px;
   background-color: white;
-  width: 327px;
+  width: 330px;
   margin-top: 20px;
   padding: 17px;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -61,6 +70,10 @@
 
   &--active{
     display: flex;
+  }
+
+  @media (min-width: 768px) {
+    left: -20px;
   }
 }
 

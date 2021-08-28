@@ -1,7 +1,14 @@
 .breadcrumb__list {
+  margin-top: 32px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .breadcrumb__section {
@@ -12,7 +19,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: $breadcrumb-text;
+  color: $lite-accent-text;
   transition: .3s;
 
   &--active {
@@ -20,11 +27,11 @@
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-    color: $breadcrumb-text-active;
+    color: $accent-details;
   }
 
   &:hover {
-    color: $breadcrumb-text-active;
+    color: $accent-details;
   }
 }
 
