@@ -20,13 +20,10 @@
 
 .header__menu {
   margin-left: auto;
-  position: relative;
   padding: 20px;
 
-  &:hover{
-    .header__nav {
-      display: block;
-    }
+  @media (min-width: 768px) {
+    position: relative;
   }
 }
 
@@ -36,9 +33,37 @@
 }
 
 .header__nav{
-  display: none;
   position: absolute;
-  border-top: 5px solid black;
   left: 0;
-  top: 61px;
+  top: 67px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: fit-content;
+  }
+}
+
+.header__account {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.header__trash {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.header__icon {
+  font-size: 1.7rem;
+  color: $lighteen-text;
+}
+
+.header__menu-btn {
+  width: 25px;
 }

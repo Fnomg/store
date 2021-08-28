@@ -1,12 +1,20 @@
 .footer {
-  background-color: #222224;
+  background-color: $accent-bg;
 }
 
 .footer__wrapper {
-  padding-top: 30px;
+  padding-top: 43px;
   padding-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column-reverse;
+
+  @media (min-width: 768px) {
+    padding-top: 30px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .footer__copyright {
@@ -14,5 +22,11 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #FBFBFB;
+  color: $lite2-accent-text;
+  margin-top: 40px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }

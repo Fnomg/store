@@ -1,8 +1,15 @@
 .nav {
-  background-color: white;
-  padding: 20px 34px 37px;
+  background-color: $nav-bg-color;
+  padding: 37px 34px;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 0 34px 37px;
+  }
 }
 
 .nav__title-wrap {
@@ -15,9 +22,14 @@
 .nav__big-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: $nav-title;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .nav__title {
@@ -38,11 +50,17 @@
   font-size: 14px;
   line-height: 17px;
   margin-top: 5px;
-  width: 180px;
   padding: 5px 15px 5px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 180px;
+  }
 
   a {
-    color: #6F6E6E;
+    color: $nav-link;
   }
 
   &:hover{

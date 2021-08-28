@@ -12,7 +12,8 @@
   font-weight: normal;
   font-size: 30px;
   line-height: 36px;
-  color: #222222;
+  color: $accent-bg;
+  text-align: center;
 }
 
 .products__subtitle {
@@ -20,14 +21,16 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #9F9F9F;
+  color: $lite-accent-text;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .products__list {
   margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   flex-direction: row;
   align-items: center;

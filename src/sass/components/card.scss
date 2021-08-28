@@ -1,7 +1,8 @@
 .card {
   cursor: pointer;
-  width: 360px;
   position: relative;
+  width: 100%;
+  max-width: 360px;
 
   &:hover{
     box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.21);
@@ -17,13 +18,13 @@
 }
 
 .card__btn {
-  color: #ffffff;
+  color: $accent-text;
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px 12px;
-  border: 1px solid #ffffff;
+  border: 1px solid $accent-btn;
   background-color: transparent;
   display: none;
   align-items: center;
@@ -38,7 +39,7 @@
   &:focus {
     transition: 0.3s;
     background-color: $accent-details;
-    border: 1px solid #fff;
+    border: 1px solid $accent-btn;
   }
 }
 
@@ -56,7 +57,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
-  color: #000000;
+  color: $darken-text;
 }
 
 .card__description {
@@ -65,7 +66,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #5D5D5D;
+  color: $lite-accent-text;
 }
 
 .card__price {
@@ -75,5 +76,10 @@
   font-size: 16px;
   line-height: 19px;
   color: $accent-details;
+}
+
+.card__img {
+  width: 100%;
+  max-width: 360px;
 }
 

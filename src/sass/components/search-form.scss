@@ -5,7 +5,7 @@
 
   &:hover {
     .search-form__input {
-      background-color: #29292a
+      background-color: $header-search-hover;
     }
   }
 }
@@ -16,7 +16,7 @@
   background-color: $accent-bg;
   border: none;
   outline: none;
-  color: white;
+  color: $accent-text;
   padding-left: 40px;
 }
 

@@ -1,10 +1,10 @@
 .button {
   padding: 17px 40px;
   background-color: $btn-bg;
-  border: 1px solid #A4A4A4;
+  border: 1px solid $btn-border;
   outline: none;
   cursor: pointer;
-  color: #000000;
+  color: $btn-text;
   transition: .3s;
   font-style: normal;
   font-weight: normal;

@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>The Brand</title>
 </head>
-
+<script src="./js/script-menu.js" defer></script>
+<body>
 <header class="header">
   <div class="header__wrapper container">
     <a class="header__item header__logo" href="index.html">
@@ -23,43 +24,49 @@
       <input type="text" class="search-form__input" placeholder="Search this...">
     </div>
     <div class="header__item header__menu">
-      <img src="img/icon-menu.svg" alt="Открыть меню">
-      <nav class="header__nav nav">
-        <div class="nav__title-wrap">
-          <i class="fa fa-times nav__close" aria-hidden="true"></i>
-          <h2 class="nav__big-title">MENU</h2>
-        </div>
-        <div class="nav__item">
-          <h3 class="nav__title">MAN</h3>
-          <ul class="nav__list">
-            <li class="nav__link"><a href="catalog.html">Accessories</a></li>
-            <li class="nav__link"><a href="catalog.html">Bags</a></li>
-            <li class="nav__link"><a href="catalog.html">Denim</a></li>
-            <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
-          </ul>
-        </div>
-        <div class="nav__item">
-          <h3 class="nav__title">WOMAN</h3>
-          <ul class="nav__list">
-            <li class="nav__link"><a href="catalog.html">Accessories</a></li>
-            <li class="nav__link"><a href="catalog.html">Jackets & Coats</a></li>
-            <li class="nav__link"><a href="catalog.html">Polos</a></li>
-            <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
-            <li class="nav__link"><a href="catalog.html">Shirts</a></li>
-          </ul>
-        </div>
-        <div class="nav__item">
-          <h3 class="nav__title">KIDS</h3>
-          <ul class="nav__list">
-            <li class="nav__link"><a href="catalog.html">Accessories</a></li>
-            <li class="nav__link"><a href="catalog.html">Jackets & Coats</a></li>
-            <li class="nav__link"><a href="catalog.html">Polos</a></li>
-            <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
-            <li class="nav__link"><a href="catalog.html">Shirts</a></li>
-            <li class="nav__link"><a href="catalog.html">Bags</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header__menu-btn">
+        <i class="fa fa-bars header__icon header__icon--opened" aria-hidden="true"></i>
+        <i class="fa fa-times header__icon header__icon--closed visually-hidden" aria-hidden="true"></i>
+      </div>
+      <div class="header__nav visually-hidden">
+        <nav class="nav">
+          <div class="nav__title-wrap">
+            <a class="nav__big-title" href="registration.html">SING UP</a>
+            <a class="nav__big-title" href="cart.html">CART</a>
+            <a class="nav__big-title" href="index.html">MAIN</a>
+          </div>
+          <div class="nav__item">
+            <h3 class="nav__title">MAN</h3>
+            <ul class="nav__list">
+              <li class="nav__link"><a href="catalog.html">Accessories</a></li>
+              <li class="nav__link"><a href="catalog.html">Bags</a></li>
+              <li class="nav__link"><a href="catalog.html">Denim</a></li>
+              <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
+            </ul>
+          </div>
+          <div class="nav__item">
+            <h3 class="nav__title">WOMAN</h3>
+            <ul class="nav__list">
+              <li class="nav__link"><a href="catalog.html">Accessories</a></li>
+              <li class="nav__link"><a href="catalog.html">Jackets & Coats</a></li>
+              <li class="nav__link"><a href="catalog.html">Polos</a></li>
+              <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
+              <li class="nav__link"><a href="catalog.html">Shirts</a></li>
+            </ul>
+          </div>
+          <div class="nav__item">
+            <h3 class="nav__title">KIDS</h3>
+            <ul class="nav__list">
+              <li class="nav__link"><a href="catalog.html">Accessories</a></li>
+              <li class="nav__link"><a href="catalog.html">Jackets & Coats</a></li>
+              <li class="nav__link"><a href="catalog.html">Polos</a></li>
+              <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
+              <li class="nav__link"><a href="catalog.html">Shirts</a></li>
+              <li class="nav__link"><a href="catalog.html">Bags</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
     <a href="registration.html" class="header__item  header__account">
       <img src="img/icon-account.svg" alt="Открыть профиль">
