@@ -19,6 +19,12 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    color: #ef5b70;
+    background-color: #e3e3e3;
+  }
 }
 
 
@@ -54,7 +60,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #F16D7F;
+  color: $accent-details;
 }
 
 .product__subtitle {
@@ -119,7 +125,7 @@
 }
 
 .product__choose {
-  width: 65%;
+  width: 55%;
   padding: 63px 53px;
   margin-top: 43px;
   border-top: 1px solid #eaeaea;

@@ -17,7 +17,7 @@
 }
 
 .form-add__wrap {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,20 +35,45 @@
 
 .form-add__button {
   margin-top: 63px;
-  padding: 10px 24px;
+}
+.form-add__item {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #F26376;
-  background-color: white;
-  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
 
-  p {
+  select {
+    border: none;
+    outline: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    margin-left: 22px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
   }
+}
+.form-add__select{
+  position: absolute;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-add__input {
+  text-align: center;
+}
+
+.form-add__icon {
+  margin-right: 10px;
+}
+
+.form-reg__btn-icon {
+  margin-left: 10px;
 }

@@ -8,6 +8,13 @@
 
 .pagination__item {
   display: flex;
+  transition: .3s;
+
+  &:hover {
+    .pagination__link {
+      color: #F26376;
+    }
+  }
 }
 
 .pagination__link {
@@ -15,12 +22,11 @@
   padding: 8px 16px;
   text-decoration: none;
 
+  &--arrow {
+    color: #686868;
+  }
+
   &--active {
     color: #F26376;
   }
-}
-
-.pagination__item:nth-of-type(1) .pagination__link,
-.pagination__item:last-of-type .pagination__link {
-  color: black;
 }
