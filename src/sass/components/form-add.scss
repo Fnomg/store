@@ -3,6 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 50px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding-top: 63px;
+  }
 }
 
 .form-add__label {
@@ -10,22 +16,32 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #6F6E6E;
 
   select {
     margin-left: 10px;
   }
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .form-add__wrap {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  max-width: 400px;
 }
 
 .form-add__label {
-  width: 33%;
 
   input {
     width: 30px;
@@ -39,25 +55,23 @@
 .form-add__item {
   position: relative;
   display: flex;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
 
   select {
     border: none;
     outline: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 10px;
+    line-height: 12px;
     color: #6F6E6E;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 }
-.form-add__select{
-  position: absolute;
-}
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -68,6 +82,8 @@ input::-webkit-inner-spin-button {
 
 .form-add__input {
   text-align: center;
+  border: 1px solid $lite-accent-text;
+  outline: none;
 }
 
 .form-add__icon {

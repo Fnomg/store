@@ -11,48 +11,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .product__button {
+  position: absolute;
+  top: 40%;
   padding: 17px 20px;
-  background-color: #d8d8d8;
+  background-color: $btn-next;
   border: none;
   outline: none;
   cursor: pointer;
   transition: .3s;
 
   &:hover {
-    color: #ef5b70;
-    background-color: #e3e3e3;
+    color: $accent-details;
+    background-color: $btn-next;
+  }
+
+  &--prev{
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
   }
 }
 
 
 .product__description {
-  background-color: white;
+  background-color: $accent-btn;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1141px;
-}
-
-.product__divider {
-  margin-top: 14px;
-  width: 150px;
-  height: 1px;
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:after {
-    content: "";
-    display: block;
-    width: 40%;
-    height: 3px;
-    background-color: #ef5b70;
-  }
+  max-width: 1141px;
+  width: 100%;
 }
 
 .product__title {
@@ -61,6 +55,15 @@
   font-size: 14px;
   line-height: 17px;
   color: $accent-details;
+
+  &:after {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 5px;
+    background-color: $accent-details;
+    margin: 12px auto 0;
+  }
 }
 
 .product__subtitle {
@@ -69,19 +72,20 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
-  color: #4D4D4D;
+  color: $btn-text-bright-less;
 
 }
 
 .product__text {
   margin-top: 67px;
-  width: 618px;
+  width: 95%;
+  max-width: 618px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #5E5E5E;
+  color: $lite-accent-text;
 }
 
 .product__descr {
@@ -95,8 +99,7 @@
 }
 
 .product__descr-item {
-  color: #b9b9b9;
-  font-family: Lato;
+  color: $lite-accent-text;
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
@@ -106,17 +109,9 @@
   text-transform: uppercase;
 }
 
-.product__descr-span {
-  color: #2f2f2f;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-}
-
 .product__price {
   margin-top: 37px;
-  color: #ef5b70;
-  font-family: Lato;
+  color: $accent-details;
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
@@ -126,7 +121,17 @@
 
 .product__choose {
   width: 55%;
-  padding: 63px 53px;
   margin-top: 43px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $form-add-border-top;
+}
+
+.product__pict {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product__img {
+  width: 100%;
+  max-width: 600px;
 }

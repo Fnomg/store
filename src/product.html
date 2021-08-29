@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script-menu.js" defer></script>
   <title>The Brand</title>
 </head>
-<script src="./js/script-menu.js" defer></script>
 <body>
 <header class="header">
   <div class="header__wrapper container">
@@ -88,7 +88,7 @@
           </a>
         </li>
         <li class="breadcrumb__item">
-          <a href="#" class="breadcrumb__link">
+          <a href="catalog.html" class="breadcrumb__link">
             <span class="breadcrumb__section">Men</span>
             <span class="breadcrumb__divider">/</span>
           </a>
@@ -105,14 +105,12 @@
 <section class="product">
   <div class="product__wrapper">
     <div class="product__carousel">
-      <button class="product__button product__button-prev" type="button">
+      <button class="product__button product__button--prev" type="button">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
       </button>
-      <ul class="product__list">
-        <li class="product__item">
-          <img class="product__img" src="img/products/product-big.png" alt="#">
-        </li>
-      </ul>
+      <div class="product__pict">
+        <img class="product__img" src="img/products/product-big.png" alt="#">
+      </div>
       <button class="product__button product__button--next" type="button">
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </button>
@@ -120,11 +118,9 @@
     <div class="product__description">
       <h3 class="product__title">WOMEN COLLECTION</h3>
       <h4 class="product__subtitle">Moschino Cheap And Chic</h4>
-      <p class="product__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-      <div class="product__descr">
-        <p class="product__descr-item">MATERIAL: <span class="product__descr-span">COTTON</span></p>
-        <p class="product__descr-item">DESIGNER: <span class="product__descr-span">BINBURHAN</span></p>
-      </div>
+      <p class="product__text">Compellingly actualize fully researched processes before proactive outsourcing.
+        Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
+        core competencies rather than exceptional portals. </p>
       <div class="product__price">$561</div>
       <form class="product__choose form-add">
         <div class="form-add__wrap">
@@ -136,7 +132,7 @@
               <option value="Green">Green</option>
             </select>
 
-        </div>
+          </div>
           <div class="form-add__item">
             <select name="choose-size">
               <option disabled selected="selected">CHOOSE SIZE</option>
@@ -154,7 +150,7 @@
         </div>
         <button class="form-add__button button button--pink" type="button">
           <i class="fa fa-cart-arrow-down form-add__icon" aria-hidden="true"></i>
-          <p>Add to Cart</p>
+          <span>Add to Cart</span>
         </button>
       </form>
     </div>
@@ -162,67 +158,70 @@
 </section>
 <section class="products">
   <div class="products__wrapper container">
-   <div class="products__list">
-     <a href="product.html" class="products__card card">
-       <img src="img/products/product-1.jpg" alt="Синяя куртка" class="card__img">
-       <button type="button" class="card__btn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
-           <g>
-             <g>
-               <path fill="#fff"
-                     d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
-             </g>
-           </g>
-         </svg>
-         <p class="card__btn-text">Add to cart</p></button>
-       <div class="card__text">
-         <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-         <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-           cool
-           Kym Ellery teams up with Moda Operandi.</p>
-         <p class="card__price">$52.00</p>
-       </div>
-     </a>
-     <a href="product.html" class="products__card card">
-       <img src="img/products/product-2.jpg" alt="Синяя куртка" class="card__img">
-       <button type="button" class="card__btn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
-           <g>
-             <g>
-               <path fill="#fff"
-                     d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
-             </g>
-           </g>
-         </svg>
-         <p class="card__btn-text">Add to cart</p></button>
-       <div class="card__text">
-         <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-         <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-           cool
-           Kym Ellery teams up with Moda Operandi.</p>
-         <p class="card__price">$52.00</p>
-       </div>
-     </a>
-     <a href="product.html" class="products__card card">
-       <img src="img/products/product-3.jpg" alt="Синяя куртка" class="card__img">
-       <button type="button" class="card__btn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
-           <g>
-             <g>
-               <path fill="#fff"
-                     d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
-             </g>
-           </g>
-         </svg>
-         <p class="card__btn-text">Add to cart</p></button>
-       <div class="card__text">
-         <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-         <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-           cool
-           Kym Ellery teams up with Moda Operandi.</p>
-         <p class="card__price">$52.00</p>
-       </div>
-     </a>
+    <div class="products__list">
+      <a href="product.html" class="products__card card">
+        <img src="img/products/product-1.jpg" alt="Синяя куртка" class="card__img">
+        <div class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
+            <g>
+              <g>
+                <path fill="#fff"
+                      d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
+              </g>
+            </g>
+          </svg>
+          <span class="card__btn-text">Add to cart</span>
+        </div>
+        <div class="card__text">
+          <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
+          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+            cool
+            Kym Ellery teams up with Moda Operandi.</p>
+          <p class="card__price">$52.00</p>
+        </div>
+      </a>
+      <a href="product.html" class="products__card card">
+        <img src="img/products/product-2.jpg" alt="Синяя куртка" class="card__img">
+        <span class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
+            <g>
+              <g>
+                <path fill="#fff"
+                      d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
+              </g>
+            </g>
+          </svg>
+          <span class="card__btn-text">Add to cart</span>
+        </span>
+        <div class="card__text">
+          <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
+          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+            cool
+            Kym Ellery teams up with Moda Operandi.</p>
+          <p class="card__price">$52.00</p>
+        </div>
+      </a>
+      <a href="product.html" class="products__card card">
+        <img src="img/products/product-3.jpg" alt="Синяя куртка" class="card__img">
+        <div class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
+            <g>
+              <g>
+                <path fill="#fff"
+                      d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
+              </g>
+            </g>
+          </svg>
+          <span class="card__btn-text">Add to cart</span>
+        </div>
+        <div class="card__text">
+          <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
+          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+            cool
+            Kym Ellery teams up with Moda Operandi.</p>
+          <p class="card__price">$52.00</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>

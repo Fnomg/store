@@ -4,6 +4,8 @@
   padding: 0;
   border: 1px solid #C4C4C4;
   border-radius: 4px;
+  width: 100%;
+  max-width: 296px;
 }
 
 .pagination__item {
@@ -12,21 +14,21 @@
 
   &:hover {
     .pagination__link {
-      color: #F26376;
+      color: $accent-details;
     }
   }
 }
 
 .pagination__link {
-  color: #C4C4C4;
+  color: $lite-accent-text;
   padding: 8px 16px;
   text-decoration: none;
 
   &--arrow {
-    color: #686868;
+    color: $lite-accent-text;
   }
 
   &--active {
-    color: #F26376;
+    color: $accent-details;
   }
 }
