@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script-menu.js" defer></script>
   <title>The Brand</title>
 </head>
-<script src="./js/script-menu.js" defer></script>
 <body>
 <header class="header">
   <div class="header__wrapper container">
@@ -81,6 +81,7 @@
     <h2 class="chapter__title">REGISTRATION</h2>
   </div>
 </section>
+
 <section class="registration">
   <div class="registration__wrapper container">
     <form class="registration__form form-reg">
@@ -98,6 +99,10 @@
           <input class="input-radio" type="radio" id="female" name="gender">
           Female
         </label>
+        <label class="label-radio">
+          <input class="input-radio" type="radio" id="other" name="gender">
+          Other
+        </label>
       </fieldset>
       <fieldset class="form-reg__item">
         <legend>Login details</legend>
@@ -106,7 +111,7 @@
       </fieldset>
       <p class="form-reg__text-help">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
       <button class="form-reg__button button button--pink" type="submit">
-        <p>JOIN NOW</p>
+        <span>JOIN NOW</span>
         <i class="fa fa-long-arrow-right form-reg__btn-icon" aria-hidden="true"></i>
       </button>
     </form>
@@ -124,6 +129,7 @@
     </div>
   </div>
 </section>
+
 <section class="review">
   <div class="review__wrapper container">
     <div class="review__content">
