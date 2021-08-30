@@ -1,11 +1,18 @@
 .good {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
-  width: 652px;
-  height: 306px;
+  width:100%;
+  max-width: 734px;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: relative;
+  gap: 30px;
+  overflow: hidden;
+  max-height: 300px;
+
+  @media (min-width: 1264px) {
+    max-width: 652px;
+  }
 }
 
 .good::after {
@@ -19,23 +26,24 @@
   right: 2%;
 }
 
-.goods__list {
+.good__pict {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  max-width: 45%;
+  overflow: hidden;
 }
 
 .good__img {
-  max-width: 262px;
+  vertical-align:middle;
+  width: 100%;
+  object-fit: cover;
 }
 
+
 .good__text {
-  padding-left: 31px;
-  padding-top: 22px;
-  padding-bottom: 60px;
-  max-width: 262px;
+  padding-right: 20px;
+  max-width: 283px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   height: 100%;
 }
@@ -43,8 +51,8 @@
 .good__text-item {
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 17px;
   color: #575757;
   display: flex;
   align-items: center;
@@ -56,20 +64,24 @@
   span, input {
     margin-left: 10px;
   }
-}
 
-.goods__change {
-  margin-top: 72px;
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: 600px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 .good__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  color: #222222;
+  font-size: 16px;
+  line-height: 19px;
+  color: $accent-text;
+
+  @media (min-width: 600px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .good__text-input {
@@ -81,6 +93,10 @@
   font-size: 18px;
   line-height: 22px;
   color: #656565;
-  border: 1px solid #EAEAEA;
+  border: 1px solid $lite-accent-text;
   outline: none;
+}
+
+.good__text-wrap {
+  margin-top: 30px
 }

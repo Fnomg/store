@@ -10,9 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script-menu.js" defer></script>
   <title>The Brand</title>
 </head>
-<script src="./js/script-menu.js" defer></script>
+
 <body>
 <header class="header">
   <div class="header__wrapper container">
@@ -83,44 +84,50 @@
 </section>
 <section class="output">
   <div class="output__wrapper container">
-    <div class="goods">
-      <div class="goods__list">
-        <a href="product.html" class="goods__card good">
-          <img src="img/products/product-1.jpg" alt="Синяя куртка" class="good__img">
+    <div class="output__goods">
+      <div class="output__list">
+        <div class="output__card good">
+        <a class="good__pict" href="product.html">
+          <img src="img/products/product-1.jpg" alt="Синяя куртка" class="good__img" width="360">
+        </a>
           <div class="good__text">
-            <h3 class="good__title">ELLERY X M'O CAPSULE</h3>
+            <a class="good__title" href="product.html">ELLERY X M'O CAPSULE</a>
             <div class="good__text-wrap">
               <p class="good__text-item">Price: <span class="good__text-item good__text-item--pink">$52.00</span></p>
               <p class="good__text-item">Color: <span>red</span></p>
               <p class="good__text-item">Size: <span>XL</span></p>
-              <label class="good__text-item">Quantity: <input class="good__text-item good__text-input" type="text" placeholder="2"></label>
+              <label class="good__text-item">Quantity: <input class="good__text-item good__text-input" type="number" placeholder="2"></label>
             </div>
           </div>
-        </a>
-        <a href="product.html" class="goods__card good">
-          <img src="img/products/product-1.jpg" alt="Синяя куртка" class="good__img">
+        </div>
+        <div class="output__card good">
+          <a class="good__pict" href="product.html">
+            <img src="img/products/product-1.jpg" alt="Синяя куртка" class="good__img" width="360">
+          </a>
           <div class="good__text">
-            <h3 class="good__title">ELLERY X M'O CAPSULE</h3>
+            <a class="good__title" href="product.html">ELLERY X M'O CAPSULE</a>
             <div class="good__text-wrap">
               <p class="good__text-item">Price: <span class="good__text-item good__text-item--pink">$52.00</span></p>
               <p class="good__text-item">Color: <span>red</span></p>
               <p class="good__text-item">Size: <span>XL</span></p>
-              <label class="good__text-item">Quantity: <input class="good__text-item good__text-input" type="text" placeholder="2"></label>
+              <label class="good__text-item">Quantity: <input class="good__text-item good__text-input" type="number" placeholder="2"></label>
             </div>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="goods__change">
-        <button class="goods__btn button" type="reset">CLEAR SHOPPING CART</button>
-        <a class="goods__btn button" href="index.html">CONTINUE SHOPPING</a>
+      <div class="output__change">
+        <button class="output__btn button" type="reset">CLEAR SHOPPING CART</button>
+        <a class="output__btn button" href="index.html">CONTINUE SHOPPING</a>
       </div>
     </div>
-    <form class="info" action="#">
-      <h3 class="info__title">SHIPPING ADRESS</h3>
-      <input class="info__input" type="text" placeholder="Bangladesh">
-      <input class="info__input" type="text" placeholder="State">
-      <input class="info__input" type="text" placeholder="Postcode / Zip">
-      <textarea class="info__input" placeholder="GET A QUOTE"></textarea>
+    <form class="output__info info" action="#">
+     <div class="info__data">
+       <h3 class="info__title">SHIPPING ADRESS</h3>
+       <input class="info__input" type="text" placeholder="Bangladesh">
+       <input class="info__input" type="text" placeholder="State">
+       <input class="info__input" type="text" placeholder="Postcode / Zip">
+       <textarea class="info__input" placeholder="GET A QUOTE"></textarea>
+     </div>
       <div class="info__checkout checkout">
         <div class="checkout__texts">
           <p class="checkout__subtitle">SUB TOTAL<span class="checkout__price">$900</span></p>

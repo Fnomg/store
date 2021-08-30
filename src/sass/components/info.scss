@@ -1,7 +1,20 @@
 .info {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1264px) {
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 360px;
+  }
 }
 
 .info__title {
@@ -9,18 +22,24 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #222222;
+  color: $accent-text;
 }
 
 .info__input {
   margin-top: 20px;
-  width: 360px;
+  max-width: 360px;
   padding: 14px 17px;
-  border: 1px solid #A4A4A4;
+  border: 1px solid $lite-accent-text;
   outline: none;
   resize: none;
+  width: 100%;
 }
 
-.info__input {
-  margin-top: 23px;
+.info__data {
+  width: 100%;
+  max-width: 360px;
+}
+
+.info__checkout {
+  max-width: 360px;
 }
