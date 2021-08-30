@@ -1,8 +1,15 @@
 .subscribe {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .subscribe__title {
@@ -11,7 +18,7 @@
   font-size: 24px;
   line-height: 167.2%;
   text-align: center;
-  color: #222224;
+  color: $accent-text;
 }
 
 .subscribe__text {
@@ -20,7 +27,7 @@
   font-size: 18px;
   line-height: 167.2%;
   text-align: center;
-  color: #222224;
+  color: $accent-text;
 }
 
 .subscribe__form {
@@ -28,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 356px;
+  width: 100%
 }
 
 .subscribe__input {
@@ -40,29 +47,16 @@
   line-height: 17px;
   display: flex;
   align-items: center;
-  color: #222224;
+  color: $accent-text;
   opacity: 0.67;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   border: none;
   outline: none;
-  background-color: #E1E1E1;
-}
+  background-color: $subscr-input;
+  transition: .3s;
 
-.subscribe__button {
-  background: #F16D7F;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  &:hover {
+    background-color: $subscr-input-hover;
+  }
 }

@@ -10,11 +10,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .review__content {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,10 +29,10 @@
 
 .review__text {
   margin-top: 30px;
-  ont-style: normal;
+  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #222224;
+  color: $accent-text;
 }

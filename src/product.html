@@ -5,12 +5,15 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://use.fontawesome.com/e4b1ea37e9.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script-menu.js" defer></script>
   <title>The Brand</title>
 </head>
-<script src="./js/script.js" defer></script>
 <body>
-
 <header class="header">
   <div class="header__wrapper container">
     <a class="header__item header__logo" href="index.html">
@@ -18,124 +21,203 @@
     </a>
     <div class="header__item header__search search-form">
       <img src="img/icon-search.svg" alt="Найти" class="search-form__icon">
-      <input type="text" class="search-form__input">
+      <input type="text" class="search-form__input" placeholder="Search this...">
     </div>
-    <a class="header__item  header__menu">
-      <img src="img/icon-menu.svg" alt="Открыть меню">
-    </a>
-    <a class="header__item  header__account">
+    <div class="header__item header__menu">
+      <div class="header__menu-btn">
+        <i class="fa fa-bars header__icon header__icon--opened" aria-hidden="true"></i>
+        <i class="fa fa-times header__icon header__icon--closed visually-hidden" aria-hidden="true"></i>
+      </div>
+      <div class="header__nav visually-hidden">
+        <nav class="nav">
+          <div class="nav__title-wrap">
+            <a class="nav__big-title" href="registration.html">SING UP</a>
+            <a class="nav__big-title" href="cart.html">CART</a>
+            <a class="nav__big-title" href="index.html">MAIN</a>
+          </div>
+          <div class="nav__item">
+            <h3 class="nav__title">MAN</h3>
+            <ul class="nav__list">
+              <li class="nav__link"><a href="catalog.html">Accessories</a></li>
+              <li class="nav__link"><a href="catalog.html">Bags</a></li>
+              <li class="nav__link"><a href="catalog.html">Denim</a></li>
+              <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
+            </ul>
+          </div>
+          <div class="nav__item">
+            <h3 class="nav__title">WOMAN</h3>
+            <ul class="nav__list">
+              <li class="nav__link"><a href="catalog.html">Accessories</a></li>
+              <li class="nav__link"><a href="catalog.html">Jackets & Coats</a></li>
+              <li class="nav__link"><a href="catalog.html">Polos</a></li>
+              <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
+              <li class="nav__link"><a href="catalog.html">Shirts</a></li>
+            </ul>
+          </div>
+          <div class="nav__item">
+            <h3 class="nav__title">KIDS</h3>
+            <ul class="nav__list">
+              <li class="nav__link"><a href="catalog.html">Accessories</a></li>
+              <li class="nav__link"><a href="catalog.html">Jackets & Coats</a></li>
+              <li class="nav__link"><a href="catalog.html">Polos</a></li>
+              <li class="nav__link"><a href="catalog.html">T-Shirts</a></li>
+              <li class="nav__link"><a href="catalog.html">Shirts</a></li>
+              <li class="nav__link"><a href="catalog.html">Bags</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <a href="registration.html" class="header__item  header__account">
       <img src="img/icon-account.svg" alt="Открыть профиль">
     </a>
-    <a class="header__item header__trash">
+    <a class="header__item header__trash" href="cart.html">
       <img src="img/icon-trash.svg" alt="Открыть корзину">
     </a>
   </div>
 </header>
-<section class="breadcrumb">
-  <div class="breadcrumb__wrapper container">
-    <h2 class="breadcrumb__page__title">New Arrivals</h2>
-    <ul class="breadcrumb__list">
-      <li class="breadcrumb__item">
-        <a href="/" class="breadcrumb__link">
-          <span class="breadcrumb__section">Home</span>
-          <span class="breadcrumb__divider">/</span>
-        </a>
-      </li>
-      <li class="breadcrumb__item">
-        <a href="#" class="breadcrumb__link">
-          <span class="breadcrumb__section">Men</span>
-          <span class="breadcrumb__divider">/</span>
-        </a>
-      </li>
-      <li class="breadcrumb__item">
-        <a href="#" class="breadcrumb__link">
-          <span class="breadcrumb__section breadcrumb__section--active">New Arrivals</span>
-        </a>
-      </li>
-    </ul>
+<section class="chapter">
+  <div class="chapter__wrapper container">
+    <h2 class="chapter__title">New Arrivals</h2>
+    <nav class="breadcrumb">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="/" class="breadcrumb__link">
+            <span class="breadcrumb__section">Home</span>
+            <span class="breadcrumb__divider">/</span>
+          </a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="catalog.html" class="breadcrumb__link">
+            <span class="breadcrumb__section">Men</span>
+            <span class="breadcrumb__divider">/</span>
+          </a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link">
+            <span class="breadcrumb__section breadcrumb__section--active">New Arrivals</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </section>
-
-
 <section class="product">
   <div class="product__wrapper">
     <div class="product__carousel">
-      <button class="product__button product__button-prev" type="button">
-        <img src="img/left-arrow.svg" alt="">
+      <button class="product__button product__button--prev" type="button">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
       </button>
-      <ul class="product__list">
-        <li class="product__item">
-          <img class="product__img" src="img/products/product-big.png" alt="#">
-        </li>
-      </ul>
+      <div class="product__pict">
+        <img class="product__img" src="img/products/product-big.png" alt="#">
+      </div>
       <button class="product__button product__button--next" type="button">
-        <img src="img/right-arrow.svg" alt="">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </button>
     </div>
     <div class="product__description">
       <h3 class="product__title">WOMEN COLLECTION</h3>
       <h4 class="product__subtitle">Moschino Cheap And Chic</h4>
-      <p class="product__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-      <div class="product__descr">
-        <p class="product__descr-item">MATERIAL: <span class="product__descr-span">COTTON</span></p>
-        <p class="product__descr-item">DESIGNER: <span class="product__descr-span">BINBURHAN</span></p>
-      </div>
+      <p class="product__text">Compellingly actualize fully researched processes before proactive outsourcing.
+        Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
+        core competencies rather than exceptional portals. </p>
       <div class="product__price">$561</div>
       <form class="product__choose form-add">
         <div class="form-add__wrap">
-          <label class="form-add__label" for="color">CHOOSE COLOR
-            <select name="color" id="color">
-              <option value="red">red</option>
-              <option value="green">green</option>
+          <div class="form-add__item">
+            <select name="choose-color">
+              <option disabled selected="selected">CHOOSE COLOR</option>
+              <option value="Red">Red</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Green">Green</option>
             </select>
-          </label>
-          <label class="form-add__label" for="size">CHOOSE SIZE
-            <select name="size" id="size">
-              <option value="red">S</option>
-              <option value="green">M</option>
-              <option value="green">L</option>
+
+          </div>
+          <div class="form-add__item">
+            <select name="choose-size">
+              <option disabled selected="selected">CHOOSE SIZE</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
             </select>
-          </label>
-          <label class="form-add__label" for="color">QUANTITY
-            <input type="number" placeholder="1">
-          </label>
+          </div>
+          <div class="form-add__item">
+            <label class="form-add__label">QUANTITY
+              <input class="form-add__input" type="number" placeholder="1">
+            </label>
+          </div>
         </div>
-        <button class="form-add__button" type="button">
-          <img src="img/trash-pink.svg" alt="" width="26">
-          <p>Add to Cart</p>
+        <button class="form-add__button button button--pink" type="button">
+          <i class="fa fa-cart-arrow-down form-add__icon" aria-hidden="true"></i>
+          <span>Add to Cart</span>
         </button>
       </form>
     </div>
   </div>
 </section>
-
-
 <section class="products">
   <div class="products__wrapper container">
-   <div class="products__list">
+    <div class="products__list">
       <a href="product.html" class="products__card card">
         <img src="img/products/product-1.jpg" alt="Синяя куртка" class="card__img">
+        <div class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
+            <g>
+              <g>
+                <path fill="#fff"
+                      d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
+              </g>
+            </g>
+          </svg>
+          <span class="card__btn-text">Add to cart</span>
+        </div>
         <div class="card__text">
           <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+            cool
             Kym Ellery teams up with Moda Operandi.</p>
           <p class="card__price">$52.00</p>
         </div>
       </a>
       <a href="product.html" class="products__card card">
         <img src="img/products/product-2.jpg" alt="Синяя куртка" class="card__img">
+        <span class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
+            <g>
+              <g>
+                <path fill="#fff"
+                      d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
+              </g>
+            </g>
+          </svg>
+          <span class="card__btn-text">Add to cart</span>
+        </span>
         <div class="card__text">
           <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+            cool
             Kym Ellery teams up with Moda Operandi.</p>
           <p class="card__price">$52.00</p>
         </div>
       </a>
       <a href="product.html" class="products__card card">
         <img src="img/products/product-3.jpg" alt="Синяя куртка" class="card__img">
+        <div class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
+            <g>
+              <g>
+                <path fill="#fff"
+                      d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
+              </g>
+            </g>
+          </svg>
+          <span class="card__btn-text">Add to cart</span>
+        </div>
         <div class="card__text">
           <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
-          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+          <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+            cool
             Kym Ellery teams up with Moda Operandi.</p>
           <p class="card__price">$52.00</p>
         </div>
@@ -147,14 +229,15 @@
   <div class="review__wrapper container">
     <div class="review__content">
       <img src="img/review-icon-1.jpg" alt="Счастливый покупатель" class="review__icon">
-      <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum</i>“</p>
+      <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+        condimentum</i>“</p>
     </div>
     <div class="review__subscribe subscribe">
       <h4 class="subscribe__title">SUBSCRIBE</h4>
       <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
       <form action="#" class="subscribe__form">
         <input type="email" placeholder="Enter Your Email" class="subscribe__input">
-        <button type="submit" class="subscribe__button">Subscribe</button>
+        <button type="submit" class="subscribe__button button button--half-circle button--pink">Subscribe</button>
       </form>
     </div>
   </div>
@@ -163,21 +246,20 @@
   <div class="footer__wrapper container">
     <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
     <div class="footer__social social">
-      <a class="social__item">
-        <img src="img/fb-icon.svg" alt="Facebook">
+      <a class="social__item button button--small">
+        <i class="fa fa-facebook"></i>
       </a>
-      <a class="social__item">
-        <img src="img/pinterest-icon.svg" alt="Pinterest">
+      <a class="social__item button button--small">
+        <i class="fa fa-pinterest-p"></i>
       </a>
-      <a class="social__item">
-        <img src="img/instagramm-icon.svg" alt="Instagram">
+      <a class="social__item button button--small">
+        <i class="fa fa-instagram"></i>
       </a>
-      <a class="social__item">
-        <img src="img/twit-icon.svg" alt="Twitter">
+      <a class="social__item button button--small">
+        <i class="fa fa-twitter"></i>
       </a>
     </div>
   </div>
 </footer>
-
 </body>
 </html>

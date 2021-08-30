@@ -1,0 +1,26 @@
+.chapter {
+  background-color: $chapter-bg;
+}
+
+.chapter__wrapper {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.chapter__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: $accent-details;
+  text-transform: uppercase;
+  text-align: center;
+}

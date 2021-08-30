@@ -1,0 +1,55 @@
+.button {
+  padding: 9px 15px;
+  background-color: $btn-bg;
+  border: 1px solid $btn-border;
+  outline: none;
+  cursor: pointer;
+  color: $btn-text;
+  transition: .3s;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+
+  &:hover {
+    border: 1px solid $btn-bg-bright;
+    background-color: $btn-bg-bright;
+    color: $btn-text-bright;
+  }
+
+
+
+  &--pink {
+    border: 1px solid transparent;
+    background-color: $btn-bg-bright;
+    color: $btn-text-bright;
+
+    &:hover {
+      background-color: $btn-text-bright;
+      color: $btn-text-bright-less;
+    }
+  }
+
+  &--half-circle {
+    border: 1px solid transparent;
+    padding: 16px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 17px;
+    padding: 17px 40px;
+  }
+
+  &--small {
+    padding: 8px;
+  }
+
+}

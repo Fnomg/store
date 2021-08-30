@@ -2,12 +2,16 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .social__item {
   width: 32px;
   height: 32px;
-  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;

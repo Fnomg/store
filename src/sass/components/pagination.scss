@@ -4,23 +4,31 @@
   padding: 0;
   border: 1px solid #C4C4C4;
   border-radius: 4px;
+  width: 100%;
+  max-width: 296px;
 }
 
 .pagination__item {
   display: flex;
-}
+  transition: .3s;
 
-.pagination__link {
-  color: #C4C4C4;
-  padding: 8px 16px;
-  text-decoration: none;
-
-  &--active {
-    color: #F26376;
+  &:hover {
+    .pagination__link {
+      color: $accent-details;
+    }
   }
 }
 
-.pagination__item:nth-of-type(1) .pagination__link,
-.pagination__item:last-of-type .pagination__link {
-  color: black;
+.pagination__link {
+  color: $lite-accent-text;
+  padding: 8px 16px;
+  text-decoration: none;
+
+  &--arrow {
+    color: $lite-accent-text;
+  }
+
+  &--active {
+    color: $accent-details;
+  }
 }

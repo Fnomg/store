@@ -5,10 +5,14 @@
 .offer__list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .offer__name {
@@ -16,7 +20,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #fff;
+  color: $lighteen-text;
 }
 
 .offer__type {
@@ -24,9 +28,8 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: $accent-details;
 }
-
 
 .offer__link {
   width: 360px;
@@ -35,6 +38,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: .3s;
+
+  @media (min-width: 768px) {
+    width: 30%;
+    height: 200px;
+  }
+
+  @media (min-width: 1264px) {
+    width: 360px;
+    height: 260px;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+  }
 }
 
 .offer__link:last-of-type {

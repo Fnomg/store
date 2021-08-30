@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #222224;
+  background-color: $accent-bg;
 }
 
 .advantages__wrapper {
@@ -9,15 +9,22 @@
 
 .advantages__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   list-style-type: none;
   gap: 30px;
+  padding: 0;
+
+  @media (min-width: 1264px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .advantages__item {
-  width: 31%;
+  width: 100%;
+  max-width: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +37,7 @@
   font-weight: normal;
   font-size: 19.96px;
   line-height: 24px;
-  color: #FBFBFB;
+  color: $lite2-accent-text;
 }
 
 .advantages__text {
@@ -40,5 +47,5 @@
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
-  color: #FBFBFB;
+  color: $lite2-accent-text;
 }
